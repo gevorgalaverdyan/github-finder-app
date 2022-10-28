@@ -1,6 +1,5 @@
-# github-finder-app
+<h1><a href=https://github-finder-gevorgalaverdyan.vercel.app/> github-finder-app </a></h1>
 <br/>
-https://github-finder-gevorgalaverdyan.vercel.app/
 <br/>
 <h3> Search for users </h3>
 <img src="https://user-images.githubusercontent.com/57418717/198742367-a4aeb40a-2226-49dc-92d2-d6e36c6f27f7.png"/>
