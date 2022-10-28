@@ -4,6 +4,7 @@ export const ACTIONS = {
 	CLEAR_USERS: 'CLEAR_USERS',
 	GET_USER: 'GET_USER',
 	GET_REPOS: 'GET_REPOS',
+	GET_USER_AND_REPOS: 'GET_USER_AND_REPOS'
 }
 
 function githubReducer(state, action) {
@@ -13,22 +14,17 @@ function githubReducer(state, action) {
 				...state,
 				loading: true,
 			}
-		case ACTIONS.GET_USER:
+		case ACTIONS.GET_USER_AND_REPOS:
 			return {
 				...state,
-				user: action.payload,
+				user: action.payload.user,
+				repos: action.payload.repos,
 				loading: false,
 			}
 		case ACTIONS.GET_USERS:
 			return {
 				...state,
 				users: action.payload,
-				loading: false,
-			}
-		case ACTIONS.GET_REPOS:
-			return {
-				...state,
-				repos: action.payload,
 				loading: false,
 			}
 		case ACTIONS.CLEAR_USERS:
